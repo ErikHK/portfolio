@@ -99,24 +99,43 @@
 	input {
 	  width: 2em;
 	  height: 2em;
-	  display: table-cell;
 	  margin-left: 1em;
 	}
 	
+	/*
 	.tag > span {
 	  display: table-cell;
 	  //margin: 0 1em 0 0;
 	  vertical-align: middle;
 	  padding: 0;
 	}
+	*/
+	
+	.tag > label {
+	  display: block ruby;
+	  //width: 8em;
+	  //float: left;
+	  padding: .5em;
+	  //line-height: 20em;
+	  //margin: .5em;
+	  //height: 3em;
+	  //border: 1px solid black;
+	}
+	
+	.tag > label > span {
+	  display: table-cell;
+	  //margin: 0 1em 0 0;
+	  vertical-align: middle;
+	  padding: 0;
+	}		
 	
 	.tag {
 		border-radius: .3em;
 		vertical-align: middle;
 		background: #fefefe;
-		display: table;
+		display: block;
 		float: left;
-		padding: .4em .4em .4em .8em;
+		//padding: .4em .4em .4em .8em;
 		margin: .5em; 
 	}
 	

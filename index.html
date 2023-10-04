@@ -107,6 +107,16 @@
 	  
   }
   
+  function check3Dsculpting()
+  {
+    if( ! $('#3D-sculpting').is(":checked"))
+      $('#3D-sculpting').prop("checked", true);
+	else
+	  $('#3D-sculpting').prop("checked", false);
+	updateAll();
+	  
+  }
+  
   
   </script>
   
@@ -127,40 +137,54 @@
 		
 		
 		<div class="tag">
+		<label for="3D">
 			<span>3D</span>
 			<input type="checkbox" id="3D" onchange="updateAll()" checked />
+		</label>
 		</div>
 		
 		<div class="tag">
+		<label for="3D-animation">
 			<span>3D animation</span>
 			<input type="checkbox" id="3D-animation" onchange="updateAll()" checked />
+		</label>
 		</div>
 		
 		<div class="tag">
+		<label for="3D-sculpting">
 			<span>3D sculpting</span>
 			<input type="checkbox" id="3D-sculpting" onchange="updateAll()" checked />
+		</label>
 		</div>
 		
 		
 		<div class="tag">
+		<label for="3D-printing">
 			<span>3D printing</span>
 			<input type="checkbox" id="3D-printing" onchange="updateAll()" checked />
+		</label>
 		</div>
 		
 		<div class="tag">
+		<label for="graphicdesign">
 			<span>Graphic Design</span>
 			<input type="checkbox" id="graphicdesign" onchange="updateAll()" checked />
+		</label>
 		</div>
 		
 		
 		<div class="tag">
+		<label for="diy">
 			<span>DIY</span>
 			<input type="checkbox" id="diy" onchange="updateAll()" checked />
+		</label>
 		</div>
 		
 		<div class="tag">
+		<label for="woodworking">
 			<span>Woodworking</span>
 			<input type="checkbox" id="woodworking" onchange="updateAll()" checked />
+		</label>
 		</div>
 		
 		</fieldset>
