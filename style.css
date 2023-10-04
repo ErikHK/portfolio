@@ -1,0 +1,131 @@
+
+	
+    html, body {
+      font-family: Arial, 'sans-serif';
+	  //display: flex;
+	  margin: 0;
+	  height: 100%;
+	  //background-color: #DDEAF3;
+	  background-color: #eeEAF3;
+	  }
+
+	
+	.project {
+	  width: 12em;
+	  height: 12em;
+	  background: #fefefe;
+	  margin: 1em;
+	  padding: .4em;
+	  display: flex;
+	  float: left;
+	  position: relative;
+	  border-radius: .5em;
+	}
+	
+	.project > span {
+	  font-weight: bold;
+	  font-variant: small-caps;
+	}
+	
+	.project > .tags {
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  margin: .4em;
+	  font-size: .75em;
+	  font-weight: normal;
+	  font-variant: small-caps;
+	}
+	
+	#container{
+	  display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      //width: 200px;
+	  height: 100%;
+	}
+	  
+	#output2 {
+	  display: flex;
+	  justify-content: center;
+	  margin: 0 auto;
+	  align-self: center;
+	  height: 100%;
+    }
+	
+	#outputt {
+	  width: 100%;
+	}
+	
+	#output {
+	  display: flex;
+	  justify-content: center;
+	  margin: 0 auto;
+	  align-self: center;
+	  height: 100%;
+    }
+	
+
+	h1 {
+	  text-align: center;
+	  margin: 0;
+	}
+	
+	fieldset {
+	  border-radius: 1em;
+	  margin-top: 2em;
+	  background-color: #fff;
+	  text-align: center;
+	  
+	  border-style: none;
+	  box-shadow: 2px 2px 0px #cacaca;
+	  margin: 2em;
+	}
+	
+	fieldset > fieldset {
+	  border-style: 1px #000;
+	  background-color: #cffeee;
+	  margin: 1em;
+	}
+	
+	fieldset > fieldset > fieldset {
+	  background-color: #bfeeee;
+	}
+	
+	fieldset > fieldset > fieldset > fieldset {
+	  background-color: #9fdddd;
+	}
+	
+	input {
+	  width: 2em;
+	  height: 2em;
+	  display: table-cell;
+	  margin-left: 1em;
+	}
+	
+	.tag > span {
+	  display: table-cell;
+	  //margin: 0 1em 0 0;
+	  vertical-align: middle;
+	  padding: 0;
+	}
+	
+	.tag {
+		border-radius: .3em;
+		vertical-align: middle;
+		background: #fefefe;
+		display: table;
+		float: left;
+		padding: .4em .4em .4em .8em;
+		margin: .5em; 
+	}
+	
+	.tag:hover {
+		background: #dedede;
+	}
+	
+	legend {
+	  font: bold 20px sans-serif;
+	  color: #333;
+	}
+	

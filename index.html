@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+  
+  function onLoad()
+  {
+  
+    console.log("data attr", $('.project').attr("data"));
+	
+	console.log($('[data="jag"]'));
+	
+	//$('[data="jag"]').hide();
+	
+    //if($('.project').attr("data") == "jag")
+		
+	//  $('.project').hide();
+  }
+  
+  function showHide3D()
+  {
+    if($('.bass').is(":checked"))   
+      $(".bassStuff").show();
+	else
+	  $(".bassStuff").hide();
+	  
+	console.log($('.bass').is(":checked"));
+  }
+  
+  
+  
+  
+  </script>
+  
+  <title>ErikHK's Portfolio</title>
+  
+  </head>
+  <body id="bod" onload="onLoad()">
+    <div id="output2">
+	<div id="outputt">
+	
+
+	  <fieldset>
+      <legend ><h1>ErikHK's Portfolio</h1></legend>
+	    
+		
+	    <fieldset>
+		<legend>Project tags</legend>
+		
+		
+		<div class="tag">
+			<span>3D</span>
+			<input type="checkbox" name="treble" class="treble" checked />
+		</div>
+		
+		
+		<div class="tag">
+			<span>3D printing</span>
+			<input type="checkbox" name="treble" checked />
+		</div>
+		
+		<div class="tag">
+			<span>Woodworking</span>
+			<input type="checkbox" name="woodworking" checked />
+		</div>
+		
+		</fieldset>
+		
+	    <fieldset>
+		<legend>Projects</legend>
+		
+		<div class="project" data="3D;3D-printing"><span>Project 1</span><span class="tags">3D, 3D-printing</span></div>
+		
+		<div class="project" data="3D;woodworking"><span>Project 2</span><span class="tags">3D, woodworking</span></div>
+		
+		<div class="project" data="graphicdesign"><span>Project 3</span><span class="tags">Graphic design</span></div>
+		
+		
+		</fieldset>
+		
+		
+		
+
+		</fieldset>
+  
+    </div>
+	</div>
+	
+  </body>
+</html>
