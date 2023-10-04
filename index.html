@@ -7,31 +7,105 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script>
   
+  function updateAll()
+  {
+    //first hide all
+	$('[data-3D]').hide();
+	$('[data-3D-animation]').hide();
+	$('[data-3D-sculpting]').hide();
+	$('[data-3D-printing]').hide();
+  
+	$('[data-graphicdesign]').hide();
+  
+	$('[data-diy]').hide();
+  
+	$('[data-woodworking]').hide();
+  
+  
+    show3D();
+	show3DAnimation();
+	show3DSculpting();
+	show3DPrinting();
+	
+	showGraphicdesign();
+	showDIY();
+	
+	showWoodworking();
+	
+  }
+  
   function onLoad()
   {
+    updateAll();
   
-    console.log("data attr", $('.project').attr("data"));
+  
+    //console.log("data attr", $('.project').attr("data"));
 	
-	console.log($('[data="jag"]'));
+	//console.log($('[data-3D="1"]'));
 	
-	//$('[data="jag"]').hide();
+	
+	//hide all 3D 
+	//$('[data-3D]').hide();
+	
+	
+	//$('[data-woodworking]').hide();
+	
+	
 	
     //if($('.project').attr("data") == "jag")
 		
 	//  $('.project').hide();
   }
   
-  function showHide3D()
+  function show3D()
   {
-    if($('.bass').is(":checked"))   
-      $(".bassStuff").show();
-	else
-	  $(".bassStuff").hide();
-	  
-	console.log($('.bass').is(":checked"));
+    if($('#3D').is(":checked"))   
+      $("[data-3D]").show();
+	
   }
   
+  function show3DAnimation()
+  {
+    if($('#3D-animation').is(":checked"))   
+      $("[data-3D-animation]").show();
+
+	  
+  }
   
+  function show3DSculpting()
+  {
+    if($('#3D-sculpting').is(":checked"))   
+      $("[data-3D-sculpting]").show();
+
+  }
+  
+  function show3DPrinting()
+  {
+    if($('#3D-printing').is(":checked"))   
+      $("[data-3D-printing]").show();
+
+  }
+  
+  function showGraphicdesign()
+  {
+    if($('#graphicdesign').is(":checked"))   
+      $("[data-graphicdesign]").show();
+	  
+  }
+  
+  function showDIY()
+  {
+    if($('#diy').is(":checked"))   
+      $("[data-diy]").show();
+	  
+  }
+  
+  function showWoodworking()
+  {
+    if($('#woodworking').is(":checked"))   
+      $("[data-woodworking]").show();
+	  
+  }
   
   
   </script>
@@ -54,18 +128,39 @@
 		
 		<div class="tag">
 			<span>3D</span>
-			<input type="checkbox" name="treble" class="treble" checked />
+			<input type="checkbox" id="3D" onchange="updateAll()" checked />
+		</div>
+		
+		<div class="tag">
+			<span>3D animation</span>
+			<input type="checkbox" id="3D-animation" onchange="updateAll()" checked />
+		</div>
+		
+		<div class="tag">
+			<span>3D sculpting</span>
+			<input type="checkbox" id="3D-sculpting" onchange="updateAll()" checked />
 		</div>
 		
 		
 		<div class="tag">
 			<span>3D printing</span>
-			<input type="checkbox" name="treble" checked />
+			<input type="checkbox" id="3D-printing" onchange="updateAll()" checked />
+		</div>
+		
+		<div class="tag">
+			<span>Graphic Design</span>
+			<input type="checkbox" id="graphicdesign" onchange="updateAll()" checked />
+		</div>
+		
+		
+		<div class="tag">
+			<span>DIY</span>
+			<input type="checkbox" id="diy" onchange="updateAll()" checked />
 		</div>
 		
 		<div class="tag">
 			<span>Woodworking</span>
-			<input type="checkbox" name="woodworking" checked />
+			<input type="checkbox" id="woodworking" onchange="updateAll()" checked />
 		</div>
 		
 		</fieldset>
@@ -73,11 +168,17 @@
 	    <fieldset>
 		<legend>Projects</legend>
 		
-		<div class="project" data="3D;3D-printing"><span>Project 1</span><span class="tags">3D, 3D-printing</span></div>
+		<div class="project" data-3D data-3D-printing><span>Project 1</span><span class="tags">3D, 3D-printing</span></div>
 		
-		<div class="project" data="3D;woodworking"><span>Project 2</span><span class="tags">3D, woodworking</span></div>
+		<div class="project" data-3D data-woodworking><span>Project 2</span><span class="tags">3D, woodworking</span></div>
 		
-		<div class="project" data="graphicdesign"><span>Project 3</span><span class="tags">Graphic design</span></div>
+		<div class="project" data-graphicdesign><span>Project 3</span><span class="tags">Graphic design</span></div>
+			
+		<div class="project" data-3D><span>Project 4</span><span class="tags">3D</span></div>
+
+		<div class="project" data-3D data-3D-animation data-3D-sculpting><span>Project 5</span><span class="tags">3D animation, 3D sculpting</span></div>
+		
+		<div class="project" data-diy><span>Project 6</span><span class="tags">DIY</span></div>
 		
 		
 		</fieldset>
