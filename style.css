@@ -1,14 +1,24 @@
 
 	
-    html, body {
+    html {
       font-family: Arial, 'sans-serif';
 	  //display: flex;
 	  margin: 0;
 	  height: 100%;
 	  //background-color: #DDEAF3;
-	  background-color: #eeEAF3;
+	  //background-color: #eeEAF3;
+	  //background: rgb(255,203,48);
+	  //background: linear-gradient(180deg, rgba(255,255,148,1) 0%, rgba(0,212,255,1) 100%) no-repeat fixed; 
+	  background: url("bg.jpg") no-repeat center fixed;
+	  background-size: cover;
+	    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 	  }
 
+	  body {
+		  margin: 0;
+	  }
 	
 	.project {
 	  width: 12em;
@@ -16,7 +26,7 @@
 	  background: #fefefe;
 	  margin: 1em;
 	  padding: .4em;
-	  display: flex;
+	  display: block;
 	  float: left;
 	  position: relative;
 	  border-radius: .5em;
@@ -27,7 +37,9 @@
 	  font-variant: small-caps;
 	}
 	
+	
 	.project > .tags {
+	  display: block;
 	  position: absolute;
 	  right: 0;
 	  bottom: 0;
@@ -35,7 +47,14 @@
 	  font-size: .75em;
 	  font-weight: normal;
 	  font-variant: small-caps;
+	  
 	}
+	
+	.project > span > a {
+		color: #333;
+		text-decoration: none;
+	}
+	
 	
 	#container{
 	  display: flex;
@@ -65,6 +84,11 @@
 	  height: 100%;
     }
 	
+	.projlink {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
 
 	h1 {
 	  text-align: center;
@@ -74,17 +98,19 @@
 	fieldset {
 	  border-radius: 1em;
 	  margin-top: 2em;
-	  background-color: #fff;
+	  background-color: #ffffff88;
 	  text-align: center;
 	  
 	  border-style: none;
-	  box-shadow: 2px 2px 0px #cacaca;
+	  //box-shadow: 2px 2px 0px #eeeeee;
 	  margin: 2em;
 	}
 	
 	fieldset > fieldset {
 	  border-style: 1px #000;
 	  background-color: #cffeee;
+	  background: rgba(255,255,148,1);
+	  background: #ffffff44;
 	  margin: 1em;
 	}
 	
@@ -112,10 +138,10 @@
 	*/
 	
 	.tag > label {
-	  display: block ruby;
+	  //display: block ruby;
 	  //width: 8em;
 	  //float: left;
-	  padding: .5em;
+	  padding: .3em;
 	  //line-height: 20em;
 	  //margin: .5em;
 	  //height: 3em;
@@ -127,24 +153,39 @@
 	  //margin: 0 1em 0 0;
 	  vertical-align: middle;
 	  padding: 0;
-	}		
+	}	
+
+	
 	
 	.tag {
 		border-radius: .3em;
 		vertical-align: middle;
-		background: #fefefe;
+		background: #ffffffcc;
 		display: block;
 		float: left;
 		//padding: .4em .4em .4em .8em;
 		margin: .5em; 
+		padding: .2em;
 	}
 	
 	.tag:hover {
-		background: #dedede;
+		background: #ffffffff;
 	}
 	
 	legend {
-	  font: bold 20px sans-serif;
+	  font: bold 20px Verdana;
 	  color: #333;
 	}
+	
+	#title {
+		padding-top: 3em;
+		color: #fff;
+	}
+	
+	#mainfieldset {
+		margin: 1em;
+		
+	}
+	
+	
 	
