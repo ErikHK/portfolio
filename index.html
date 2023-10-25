@@ -21,6 +21,9 @@
   
 	$('[data-woodworking]').hide();
   
+	$('[data-photography]').hide();
+	
+	$('[data-art]').hide();
   
     show3D();
 	show3DAnimation();
@@ -29,9 +32,9 @@
 	
 	showGraphicdesign();
 	showDIY();
-	
 	showWoodworking();
-	
+	showPhotography();
+	showArt();
   }
   
   function onLoad()
@@ -100,6 +103,21 @@
 	  
   }
   
+  function showArt()
+  {
+    if($('#art').is(":checked"))   
+      $("[data-art]").show();
+	  
+  }
+  
+  
+  function showPhotography()
+  {
+    if($('#photography').is(":checked"))   
+      $("[data-photography]").show();
+	  
+  }
+  
   function showWoodworking()
   {
     if($('#woodworking').is(":checked"))   
@@ -129,12 +147,12 @@
 	
 	  <div id="header">
 	  
-	    <div><h1 id="headertext" >ErikHK's portfolio</h1></div>
+	    <div></div>
 	  
 	  </div>
 	<div id="menu">
-	  <div><a href="about.html">Projects</a></div>
-	  <div><a href="about.html">Photography</a></div>
+	  <div><a href="">Projects</a></div>
+	  <div><a href="photography.html">Photography</a></div>
 	  <div><a href="about.html">About</a></div>
 	</div>
 		
@@ -192,24 +210,44 @@
 		</label>
 		</div>
 		
+		<div class="tag">
+		<label for="photography">
+			<span>Photography</span>
+			<input type="checkbox" id="photography" onchange="updateAll()" checked />
+		</label>
+		</div>
+		
+		<div class="tag">
+		<label for="art">
+			<span>Art</span>
+			<input type="checkbox" id="art" onchange="updateAll()" checked />
+		</label>
+		</div>
+		
 		</fieldset>
 		
 	    <fieldset>
 		<legend>Projects</legend>
 		
-		<div class="project" id="torso" data-3D data-3D-animation data-3D-sculpting><span><a href="" class="projlink">Elephant statues</a></span><span class="tags">3D, 3D-animation, 3D-sculpting</span></div>
 		
-		<div class="project" data-3D data-woodworking><span><a href="" class="projlink">Bendy Turning Torso</a></span><span class="tags">3D, woodworking</span></div>
+		<div class="project" id="torso" data-3D data-3D-animation><span><a href="" class="projlink">Bendy Turning Torso</a></span><span class="tags">3D, 3D-animation</span></div>
 		
-		<div class="project" data-graphicdesign><span><a href="" class="projlink">Marching Statues</a></span><span class="tags">Graphic design</span></div>
+		<div class="project" id="marchingstatues" data-3D data-3D-animation><span><a href="" class="projlink">Marching Statues</a></span><span class="tags">3D, 3D-animation</span></div>
 			
-		<div class="project" data-3D><span><a href="" class="projlink">UFO Water Tower</a></span><span class="tags">3D</span></div>
+		<div class="project" id="watertowerufo" data-3D data-3D-animation><span><a href="" class="projlink">UFO Water Tower</a></span><span class="tags">3D, 3D-animation</span></div>
 
-		<div class="project" data-3D data-3D-animation data-3D-sculpting><span><a href="" class="projlink">Seagull Sculptures</a></span><span class="tags">3D, 3D animation, 3D sculpting</span></div>
+		<div class="project" id="seagullsculptures" data-3D data-3D-sculpting><span><a href="" class="projlink">Seagull Sculptures</a></span><span class="tags">3D, 3D sculpting</span></div>
 		
-		<div class="project" data-3D data-diy data-3D-printing><span><a href="" class="projlink">3D Printed Trumpet</a></span><span class="tags">3D, 3D-printing, DIY</span></div>
+		<div class="project" id="ttsolarigraphy" data-photography data-art data-diy><span><a href="" class="projlink">Turning Torso Solarigraphy</a></span><span class="tags">Photography, Art, DIY</span></div>
 		
-		<div class="project" data-3D data-3D-animation data-3D-sculpting><span><a href="" class="projlink">Diving Seagull</a></span><span class="tags">3D, 3D-animation, 3D-sculpting</span></div>
+		<div class="project" id="divingseagull" data-3D data-3D-animation data-3D-sculpting><span><a href="" class="projlink">Diving Seagull</a></span><span class="tags">3D, 3D-animation, 3D-sculpting</span></div>
+		
+		<div class="project" id="jumpingearthworms" data-3D data-3D-animation><span><a href="" class="projlink">Jumping Earth Worms</a></span><span class="tags">3D, 3D-animation</span></div>
+		
+		<div class="project" id="helicopterwindmills" data-3D data-3D-animation><span><a href="" class="projlink">Helicopter Windmills</a></span><span class="tags">3D, 3D-animation</span></div>
+		
+		<div class="project" id="sunflower" data-art data-diy><span><a href="" class="projlink">Sunflower Wall Art</a></span><span class="tags">Art, DIY</span></div>
+		
 		</fieldset>
   
     </div>

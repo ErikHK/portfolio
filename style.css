@@ -31,6 +31,7 @@
 	  float: left;
 	  position: relative;
 	  border-radius: .5em;
+	  text-shadow: 1px 1px 4px black;
 	}
 	
 	.project > span {
@@ -59,7 +60,7 @@
 	
 	#container {
 		//margin: 1em;
-		padding: 1em 0 1em 0;
+		padding: 0 0 1em 0;
 		background: #ffffff88;
 		
 		
@@ -183,8 +184,16 @@
 	
 	#header {
 		padding: 0;
+		margin: 0;
+		min-height: 100px;
+		height: 162px;
 		color: #ffffffee;
+		//color: #ffffff;
 		text-align: left;
+		background: url('header.png') no-repeat;
+		background-size: contain;
+		background-position: center;
+		border-radius: 1em 1em 0 0;
 	}
 	
 	#headertext {
@@ -225,7 +234,48 @@
 	}
 	
 	#torso {
-		background: url("elephant.jpg");
+		background: url("./bendyturningtorso/thumb.jpg");
 		background-size: 100% 100%;
 	}
+	
+	#seagullsculptures {
+		background: url("./seagullsculptures/thumb.jpg");
+		background-size: 100% 100%;
+	}
+	
+	#marchingstatues {
+		background: url("./marchingbandofstortorget/thumb.jpg");
+		background-size: 100% 100%;
+	}
+	
+	#watertowerufo {
+		background: url("./watertowerufo/thumb.jpg");
+		background-size: 100% 100%;
+	}
+	
+	#ttsolarigraphy {
+		background: url("./ttsolarigraphy/thumb.jpg");
+		background-size: 100% 100%;
+	}
+	
+	#divingseagull {
+		background: url("./divingseagull/thumb.jpg");
+		background-size: 100% 100%;
+	}
+	
+	#jumpingearthworms {
+		background: url("./jumpingearthworms/thumb.jpg");
+		background-size: 100% 100%;
+	}
+	
+	#helicopterwindmills {
+		background: url("./helicopterwindmills/thumb.jpg");
+		background-size: 100% 100%;
+	}
+	
+	#sunflower {
+		background: url("./sunflower/thumb.jpg");
+		background-size: 100% 100%;
+	}
+	
 	
