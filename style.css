@@ -214,9 +214,11 @@
 		padding: 0;
 	}
 	
+	/*
 	#menu div:first-child {
 		background: #efefefdd;
 	}
+	*/
 	
 	#menu a {
 		text-decoration: none;
