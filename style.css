@@ -4,20 +4,20 @@
       font-family: Arial, 'sans-serif';
 	  //display: flex;
 	  margin: 0;
-	  height: 100%;
+	  //height: 100%;
 	  //background-color: #DDEAF3;
 	  //background-color: #eeEAF3;
 	  //background: rgb(255,203,48);
 	  //background: linear-gradient(180deg, rgba(255,255,148,1) 0%, rgba(0,212,255,1) 100%) no-repeat fixed; 
 	  background: url("bg.jpg") no-repeat center fixed;
 	  background-size: cover;
-	    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+	  -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
 	  }
 
 	  body {
-		  margin: 0;
+		  //margin: 0;
 		  padding: 1em;
 	  }
 	
@@ -68,7 +68,7 @@
 	}
 	
 	#output {
-	  display: flex;
+	  //display: flex;
 	  justify-content: center;
 	  margin: 0 auto;
 	  align-self: center;
@@ -190,7 +190,7 @@
 		color: #ffffffee;
 		//color: #ffffff;
 		text-align: left;
-		background: url('header.png') no-repeat;
+		background: url('./header.png') no-repeat;
 		background-size: contain;
 		background-position: center;
 		border-radius: 1em 1em 0 0;
@@ -278,4 +278,21 @@
 		background-size: 100% 100%;
 	}
 	
+	#story {
+		margin: 0;
+		padding: 2em;
+		font-size: 1.3em;
+		text-align: left;
+	}
+	
+	#story span {
+		display: inline-block;
+		margin-top: .5em;
+	}
+	
+	#story a {
+		text-decoration-thickness: .08em;
+		text-decoration-style: dotted;
+		color: #6666ff;
+	}
 	

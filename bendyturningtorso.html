@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+  
+  function updateAll()
+  {
+    //first hide all
+	$('[data-3D]').hide();
+	$('[data-3D-animation]').hide();
+	$('[data-3D-sculpting]').hide();
+	$('[data-3D-printing]').hide();
+  
+	$('[data-graphicdesign]').hide();
+  
+	$('[data-diy]').hide();
+  
+	$('[data-woodworking]').hide();
+  
+	$('[data-photography]').hide();
+	
+	$('[data-art]').hide();
+  
+    show3D();
+	show3DAnimation();
+	show3DSculpting();
+	show3DPrinting();
+	
+	showGraphicdesign();
+	showDIY();
+	showWoodworking();
+	showPhotography();
+	showArt();
+  }
+  
+  function onLoad()
+  {
+    updateAll();
+  
+  
+    //console.log("data attr", $('.project').attr("data"));
+	
+	//console.log($('[data-3D="1"]'));
+	
+	
+	//hide all 3D 
+	//$('[data-3D]').hide();
+	
+	
+	//$('[data-woodworking]').hide();
+	
+	
+	
+    //if($('.project').attr("data") == "jag")
+		
+	//  $('.project').hide();
+  }
+  
+  function show3D()
+  {
+    if($('#3D').is(":checked"))   
+      $("[data-3D]").show();
+	
+  }
+  
+  function show3DAnimation()
+  {
+    if($('#3D-animation').is(":checked"))   
+      $("[data-3D-animation]").show();
+
+	  
+  }
+  
+  function show3DSculpting()
+  {
+    if($('#3D-sculpting').is(":checked"))   
+      $("[data-3D-sculpting]").show();
+
+  }
+  
+  function show3DPrinting()
+  {
+    if($('#3D-printing').is(":checked"))   
+      $("[data-3D-printing]").show();
+
+  }
+  
+  function showGraphicdesign()
+  {
+    if($('#graphicdesign').is(":checked"))   
+      $("[data-graphicdesign]").show();
+	  
+  }
+  
+  function showDIY()
+  {
+    if($('#diy').is(":checked"))   
+      $("[data-diy]").show();
+	  
+  }
+  
+  function showArt()
+  {
+    if($('#art').is(":checked"))   
+      $("[data-art]").show();
+	  
+  }
+  
+  
+  function showPhotography()
+  {
+    if($('#photography').is(":checked"))   
+      $("[data-photography]").show();
+	  
+  }
+  
+  function showWoodworking()
+  {
+    if($('#woodworking').is(":checked"))   
+      $("[data-woodworking]").show();
+	  
+  }
+  
+  function check3Dsculpting()
+  {
+    if( ! $('#3D-sculpting').is(":checked"))
+      $('#3D-sculpting').prop("checked", true);
+	else
+	  $('#3D-sculpting').prop("checked", false);
+	updateAll();
+	  
+  }
+  
+  
+  </script>
+  
+  <title>ErikHK's Portfolio</title>
+  
+  </head>
+  <body onload="onLoad()">
+	
+	<div id="container">
+	
+	  <div id="header">
+	  
+	    <div></div>
+	  
+	  </div>
+	<div id="menu">
+	  <div><a href="index.html">Projects</a></div>
+	  <div><a href="about.html">About</a></div>
+	</div>
+
+
+	<fieldset id="story">
+		<legend><h1>Bendy Turning Torso</h1></legend>
+		
+	
+	
+	<span>This was a fun project made in Blender.  </span>
+	
+		</fieldset>
+	</div>
+
+
+    </div>
+	
+  </body>
+</html>
