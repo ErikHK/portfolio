@@ -18,12 +18,13 @@
 
 	  body {
 		  margin: 0;
+		  padding: 1em;
 	  }
 	
 	.project {
-	  width: 12em;
-	  height: 12em;
-	  background: #fefefe;
+	  width: 15em;
+	  height: 15em;
+	  background: #aaa;
 	  margin: 1em;
 	  padding: .4em;
 	  display: block;
@@ -47,34 +48,22 @@
 	  font-size: .75em;
 	  font-weight: normal;
 	  font-variant: small-caps;
+	  color: #fff;
 	  
 	}
 	
 	.project > span > a {
-		color: #333;
+		color: #fff;
 		text-decoration: none;
 	}
 	
-	
 	#container {
-	  display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      //width: 200px;
-	  height: 100%;
-	}
-	  
-	#output2 {
-	  //display: flex;
-	  justify-content: center;
-	  margin: 0 auto;
-	  align-self: center;
-	  height: 100%;
-	  clear: both;
-    }
-	
-	#outputt {
-	  width: 100%;
+		//margin: 1em;
+		padding: 1em 0 1em 0;
+		background: #ffffff88;
+		
+		
+		border-radius: 1em;
 	}
 	
 	#output {
@@ -97,14 +86,14 @@
 	}
 	
 	fieldset {
-	  border-radius: 1em;
-	  margin-top: 2em;
+	  //border-radius: 1em;
+	  //margin-top: 2em;
 	  background-color: #ffffff88;
 	  text-align: center;
 	  
 	  border-style: none;
 	  //box-shadow: 2px 2px 0px #eeeeee;
-	  margin: 2em;
+	  margin: 1.5em 0 1.5em 0;
 	  
 	}
 	
@@ -193,11 +182,8 @@
 	}
 	
 	#header {
-		background: #ffffff88;
-		margin: 1em 1em 0 1em;
 		padding: 0;
 		color: #ffffffee;
-		border-radius: 1em 1em 0 0;
 		text-align: left;
 	}
 	
@@ -215,9 +201,8 @@
 	
 	#menu {
 		overflow: hidden;
-		margin: 0 1em 0 1em;
 		background: #efefefbb;
-		padding: 0 0 0 1em;
+		padding: 0;
 	}
 	
 	#menu div:first-child {
@@ -230,8 +215,8 @@
 	}
 	
 	#menu div {
-		margin: 0 0 0 1em;
-		padding: .5em;
+		margin: 0 0 0 0;
+		padding: 1em;
 		float: left;
 	}
 	
@@ -239,5 +224,8 @@
 		background: #efefefdd;
 	}
 	
-	
+	#torso {
+		background: url("elephant.jpg");
+		background-size: 100% 100%;
+	}
 	
