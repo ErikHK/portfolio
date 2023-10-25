@@ -56,7 +56,7 @@
 	}
 	
 	
-	#container{
+	#container {
 	  display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -65,11 +65,12 @@
 	}
 	  
 	#output2 {
-	  display: flex;
+	  //display: flex;
 	  justify-content: center;
 	  margin: 0 auto;
 	  align-self: center;
 	  height: 100%;
+	  clear: both;
     }
 	
 	#outputt {
@@ -104,6 +105,7 @@
 	  border-style: none;
 	  //box-shadow: 2px 2px 0px #eeeeee;
 	  margin: 2em;
+	  
 	}
 	
 	fieldset > fieldset {
@@ -112,6 +114,7 @@
 	  background: rgba(255,255,148,1);
 	  background: #ffffff44;
 	  margin: 1em;
+	  padding: .5em;
 	}
 	
 	fieldset > fieldset > fieldset {
@@ -183,8 +186,57 @@
 	}
 	
 	#mainfieldset {
-		margin: 1em;
+		margin: 0 1em 1em 1em;
+		border-radius: 0 0 1em 1em;
+		clear: both;
 		
+	}
+	
+	#header {
+		background: #ffffff88;
+		margin: 1em 1em 0 1em;
+		padding: 0;
+		color: #ffffffee;
+		border-radius: 1em 1em 0 0;
+		text-align: left;
+	}
+	
+	#headertext {
+		font-family: Lucida Fax;
+		font-size: 3.5em;
+		padding: .1em;
+		//float: left;
+	}
+	
+	
+	#header div {
+		//float: left;
+	}
+	
+	#menu {
+		overflow: hidden;
+		margin: 0 1em 0 1em;
+		background: #efefefbb;
+		padding: 0 0 0 1em;
+	}
+	
+	#menu div:first-child {
+		background: #efefefdd;
+	}
+	
+	#menu a {
+		text-decoration: none;
+		color: #000;
+	}
+	
+	#menu div {
+		margin: 0 0 0 1em;
+		padding: .5em;
+		float: left;
+	}
+	
+	#menu div:hover {
+		background: #efefefdd;
 	}
 	
 	
